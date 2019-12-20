@@ -1,0 +1,44 @@
+{
+  "name": "todo",
+  "rules": {
+    "comment_block": {
+      "type": "REPEAT",
+      "content": {
+        "type": "SYMBOL",
+        "name": "comment_with_todo"
+      }
+    },
+    "comment_with_todo": {
+      "type": "SEQ",
+      "members": [
+        {
+          "type": "SYMBOL",
+          "name": "todo_keyword"
+        },
+        {
+          "type": "SYMBOL",
+          "name": "todo_content"
+        }
+      ]
+    },
+    "todo_keyword": {
+      "type": "PATTERN",
+      "value": "TODO|HACK"
+    },
+    "todo_content": {
+      "type": "PATTERN",
+      "value": ".*\\n"
+    }
+  },
+  "extras": [
+    {
+      "type": "PATTERN",
+      "value": "\\s"
+    }
+  ],
+  "conflicts": [],
+  "externals": [],
+  "inline": [],
+  "supertypes": []
+}
+

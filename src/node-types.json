@@ -1,0 +1,44 @@
+[
+  {
+    "type": "comment_block",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "comment_with_todo",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "comment_with_todo",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "todo_content",
+          "named": true
+        },
+        {
+          "type": "todo_keyword",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "todo_content",
+    "named": true
+  },
+  {
+    "type": "todo_keyword",
+    "named": true
+  }
+]
